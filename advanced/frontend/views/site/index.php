@@ -7,9 +7,16 @@ $this->title = 'My Yii Application';
 <div class="site-index">
 
     <div class="jumbotron">
-        <h1>Congratulations!</h1>
+        <h1>Sanger Learning</h1>
 
-        <p class="lead">You have successfully created your Yii-powered application.</p>
+        
+                <p class="lead">| Merupakan lembaga kursus yang fokus pada programming (coding) dan multimedia.| </p>
+                <p class="lead">| Menyediakan berbagai macam kursus programming mulai dari Web Design, Web Programming, Bahasa C, Java, Desain Grafis, dan Animasi.| </p>
+                <p class="lead">| Peserta akan dibimbing oleh trainer yang profesional dan telah berpengalaman dalam mengembangkan berbagai macam website, aplikasi dan produk industri kreatif. |</p>
+                <p><h3>Silahkan pilih kursus yang Anda inginkan. <br>Belajar sekarang juga dan raih pekerjaan impian anda.</h3></p>
+                </ul>
+
+        
 
         <p><a class="btn btn-lg btn-success" href="http://www.yiiframework.com">DAFTAR</a></p>
     </div>
