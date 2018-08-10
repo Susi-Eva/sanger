@@ -1,6 +1,6 @@
 <?php
 
-namespace backend\models;
+namespace backend\controllers;
 
 use Yii;
 use backend\models\TbRuangan;
@@ -123,10 +123,5 @@ class TbRuanganController extends Controller
         }
 
         throw new NotFoundHttpException('The requested page does not exist.');
-    }
-
-    public function actionDaftar()
-    {
-        return $this->render('tb-ruangan/create');
     }
 }

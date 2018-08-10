@@ -7,7 +7,7 @@ use yii\grid\GridView;
 /* @var $searchModel backend\models\TbSiswaSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Tb Siswas';
+$this->title = 'Daftar Siswa';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="tb-siswa-index">
@@ -16,16 +16,15 @@ $this->params['breadcrumbs'][] = $this->title;
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
     <p>
-        <?= Html::a('Create Tb Siswa', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a('Tambah Siswa', ['create'], ['class' => 'btn btn-success']) ?> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<?= Html::a('Lihat daftar Pengajar', ['/tb-pengajar/index'], ['class' => 'btn btn-success']) ?>
     </p>
 
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
-        'filterModel' => $searchModel,
+        
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
 
-            'id',
             'nama',
             'alamat',
             'nomor_hp',
@@ -36,4 +35,10 @@ $this->params['breadcrumbs'][] = $this->title;
             ['class' => 'yii\grid\ActionColumn'],
         ],
     ]); ?>
+</div>
+
+<div class="tb-pengajar-index">
+    <p>
+        
+    </p>
 </div>

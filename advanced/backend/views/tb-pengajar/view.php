@@ -6,8 +6,8 @@ use yii\widgets\DetailView;
 /* @var $this yii\web\View */
 /* @var $model backend\models\TbPengajar */
 
-$this->title = $model->id;
-$this->params['breadcrumbs'][] = ['label' => 'Tb Pengajars', 'url' => ['index']];
+$this->title = $model->nama;
+$this->params['breadcrumbs'][] = ['label' => 'Dfatra Pengajars', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="tb-pengajar-view">
@@ -33,6 +33,7 @@ $this->params['breadcrumbs'][] = $this->title;
             'alamat',
             'nomor_hp',
             'email_akun:email',
+            
         ],
     ]) ?>
 

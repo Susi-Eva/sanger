@@ -6,8 +6,8 @@ use yii\helpers\Html;
 /* @var $this yii\web\View */
 /* @var $model backend\models\TbPengajar */
 
-$this->title = 'Create Tb Pengajar';
-$this->params['breadcrumbs'][] = ['label' => 'Tb Pengajars', 'url' => ['index']];
+$this->title = 'Tambah Pengajar';
+$this->params['breadcrumbs'][] = ['label' => 'Daftar Pengajar', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="tb-pengajar-create">

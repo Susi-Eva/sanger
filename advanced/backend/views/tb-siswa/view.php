@@ -6,8 +6,8 @@ use yii\widgets\DetailView;
 /* @var $this yii\web\View */
 /* @var $model backend\models\TbSiswa */
 
-$this->title = $model->id;
-$this->params['breadcrumbs'][] = ['label' => 'Tb Siswas', 'url' => ['index']];
+$this->title = $model->nama;
+$this->params['breadcrumbs'][] = ['label' => 'Daftar Siswa', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="tb-siswa-view">

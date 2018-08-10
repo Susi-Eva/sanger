@@ -6,8 +6,8 @@ use yii\widgets\DetailView;
 /* @var $this yii\web\View */
 /* @var $model backend\models\TbRuangan */
 
-$this->title = $model->id;
-$this->params['breadcrumbs'][] = ['label' => 'Tb Ruangans', 'url' => ['index']];
+$this->title = $model->nama;
+$this->params['breadcrumbs'][] = ['label' => 'Daftar Ruangan', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="tb-ruangan-view">

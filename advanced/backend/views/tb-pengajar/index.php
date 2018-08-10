@@ -7,7 +7,7 @@ use yii\grid\GridView;
 /* @var $searchModel backend\models\TbPengajarSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Tb Pengajars';
+$this->title = 'Daftar Pengajar';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="tb-pengajar-index">
@@ -16,16 +16,15 @@ $this->params['breadcrumbs'][] = $this->title;
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
     <p>
-        <?= Html::a('Create Tb Pengajar', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a('Tambah Pengajar', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
 
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
-        'filterModel' => $searchModel,
+
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
 
-            'id',
             'nama',
             'alamat',
             'nomor_hp',

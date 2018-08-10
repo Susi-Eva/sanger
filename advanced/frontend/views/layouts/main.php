@@ -89,7 +89,8 @@ AppAsset::register($this);
 
 <footer class="footer">
     <div class="container">
-        <p class="pull-left">&copy; <?= Html::encode(Yii::$app->name) ?> <?= date('Y') ?></p>
+        <strong>Copyright &copy; KP 350A  <?= date('Y') ?></strong> &nbsp;  All rights
+    served.
 
         <p class="pull-right"><?= Yii::powered() ?></p>
     </div>
