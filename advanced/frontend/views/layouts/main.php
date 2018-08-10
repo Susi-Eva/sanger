@@ -55,7 +55,7 @@ AppAsset::register($this);
         ['label' => 'Basic Android Development', 'url' => ['/site/mobilereg']],
         ['label' => 'Basic Front End Web Development', 'url' => ['/site/webreg']],
         ['label' => 'Graphic Design', 'url' => ['/site/design']],
-        ['label' => 'Web Programming', 'url' => ['/site/Programming']]
+        ['label' => 'Web Programming', 'url' => ['/site/programming']]
     ]];
     if (Yii::$app->user->isGuest) {
         $menuItems[] = ['label' => 'Signup', 'url' => ['/site/signup']];

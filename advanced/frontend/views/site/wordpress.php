@@ -101,7 +101,16 @@ img.emoji {
                       <center><div class="desc">Kelas ini terbuka bagi siapa saja yang ingin memiliki keahlianmembuat website tanpa melalui proses coding. Outputnya adalah, Anda dapat membuat website dalam hitungan jam!</div></center> 
                     
                       <br>
-                      <center><a href="https://docs.google.com/forms/d/e/1FAIpQLSefOngRVVPqciKsv7eepx-6YFsSiY-HRIOiq9NJKXdi_7HoOg/viewform" class="ts-bt-pricing"><button class="btn btn-success">Daftar Sekarang</button></a></center>
+                      <?php
+
+                             if(!Yii::$app->user->isGuest){?>
+                               <h3><strong><center><?=Html::a('Daftar', ['site/daftar']); ?></center></strong></h3>
+                              <?php
+                              }else{ ?>
+                                <h3><strong><center><?=Html::a('Daftar', ['site/login']); ?></center></strong></h3>
+                                <?php
+                           }
+                           ?>
                   </div>
                 </td> &nbsp;
                 <td>
@@ -118,7 +127,16 @@ img.emoji {
                     </div>
                     <center><div class="desc">Kelas ini terbuka bagi siapa saja yang ingin memiliki keahlianmembuat website tanpa melalui proses coding. Outputnya adalah, Anda dapat membuat website dalam hitungan jam!</div></center>
                     <br>
-                    <center><a href="https://docs.google.com/forms/d/e/1FAIpQLSefOngRVVPqciKsv7eepx-6YFsSiY-HRIOiq9NJKXdi_7HoOg/viewform" class="ts-bt-pricing"><button class="btn btn-success">Daftar Sekarang</button></a></center>
+                    <?php
+
+                             if(!Yii::$app->user->isGuest){?>
+                               <h3><strong><center><?=Html::a('Daftar', ['site/daftar']); ?></center></strong></h3>
+                              <?php
+                              }else{ ?>
+                                <h3><strong><center><?=Html::a('Daftar', ['site/login']); ?></center></strong></h3>
+                                <?php
+                           }
+                           ?>
                   </div>
                 </td></tr> 
 

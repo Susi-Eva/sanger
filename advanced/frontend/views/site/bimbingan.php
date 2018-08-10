@@ -100,7 +100,7 @@ img.emoji {
                       </div>
                       <center><div class="desc">Kelas ini terbuka bagi mahasiswa D1,D2,D3,D3 dan S1 jurusan teknik informatika dan sistem informasi. Kelas bersifat bimbingan hingga Tugas Akhir selesai.</div></center> 
                     
-                      <br>
+                      <br><br>
                       <?php
 
                              if(!Yii::$app->user->isGuest){?>
@@ -126,7 +126,7 @@ img.emoji {
                       <center><p>(Harga tergantung pada kesulitan kasus)<br></p></center>
                     </div>
                     <center><div class="desc">Kelas ini terbuka bagi mahasiswa D1,D2,D3,D3 dan S1 jurusan teknik informatika dan sistem informasi. Kelas bersifat bimbingan hingga Tugas Akhir selesai.</div></center>
-                    <br><br>
+                    
                     <?php
 
                              if(!Yii::$app->user->isGuest){?>

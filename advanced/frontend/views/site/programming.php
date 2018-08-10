@@ -101,7 +101,16 @@ img.emoji {
                       <center><div class="desc">Kelas ini terbuka bagi siapa saja yang ingin memiliki keahlian dasar dalam penggunaan bahasa pemrograman dan database mysql. Anda diharapkan sudah mengusain HTML, materi web desain sebelum mengambil kelas ini. </div></center> 
                     
                       <br>
-                      <center><a href="https://docs.google.com/forms/d/e/1FAIpQLSefOngRVVPqciKsv7eepx-6YFsSiY-HRIOiq9NJKXdi_7HoOg/viewform" class="ts-bt-pricing"><button class="btn btn-success">Daftar Sekarang</button></a></center>
+                     <?php
+
+                             if(!Yii::$app->user->isGuest){?>
+                               <h3><strong><center><?=Html::a('Daftar', ['site/daftar']); ?></center></strong></h3>
+                              <?php
+                              }else{ ?>
+                                <h3><strong><center><?=Html::a('Daftar', ['site/login']); ?></center></strong></h3>
+                                <?php
+                           }
+                           ?>
                   </div>
                 </td> &nbsp;
                 <td>
@@ -116,8 +125,17 @@ img.emoji {
                       <center><p>(Dari Harga awal IDR 6.000.000)<br></p></center>
                     </div>
                     <center><div class="desc">Dapatkan potongan harga masing-masing Rp 200.000, untuk pendaftaran 2 peserta sekaligus!</div></center>
-                    <br><br>
-                    <center><a href="https://docs.google.com/forms/d/e/1FAIpQLSefOngRVVPqciKsv7eepx-6YFsSiY-HRIOiq9NJKXdi_7HoOg/viewform" class="ts-bt-pricing"><button class="btn btn-success">Daftar Sekarang</button></a></center>
+                    <br>
+                    <?php
+
+                             if(!Yii::$app->user->isGuest){?>
+                               <h3><strong><center><?=Html::a('Daftar', ['site/daftar']); ?></center></strong></h3>
+                              <?php
+                              }else{ ?>
+                                <h3><strong><center><?=Html::a('Daftar', ['site/login']); ?></center></strong></h3>
+                                <?php
+                           }
+                           ?>
                   </div>
                 </td></tr> 
 
