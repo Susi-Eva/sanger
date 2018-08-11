@@ -272,7 +272,6 @@ class SiteController extends Controller
         return $this->render('programmingreg');
     }
 
-
     public function actionWebreg()
     {
         return $this->render('webreg');
